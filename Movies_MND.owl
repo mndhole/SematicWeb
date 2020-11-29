@@ -1,0 +1,1659 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.movie.com/ontologies/Movie_MND.owl#"
+     xml:base="http://www.movie.com/ontologies/Movie_MND.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.movie.com/ontologies/Movie_MND.owl">
+        <rdfs:comment>Movie Ontology
+Submitted by: Manjushri Dhole</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasActor -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasActor">
+        <owl:inverseOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isActorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasActress -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasActress">
+        <owl:inverseOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isActressOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actress"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasAwards -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasAwards">
+        <owl:inverseOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isAwardOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Awards"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasCertified -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasCertified">
+        <owl:inverseOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isCertificationFor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Certification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasDOP -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasDOP">
+        <owl:inverseOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isDOPOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasDirector -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector">
+        <owl:inverseOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isDirectorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Director"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasEditor -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasEditor">
+        <owl:inverseOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isEditorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage">
+        <owl:inverseOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isLanguageOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasMusicDirector -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasMusicDirector">
+        <owl:inverseOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isMusicDirectorOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Music_Director"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasPlace -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasPlace">
+        <owl:inverseOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isPlacefor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasProducer -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer">
+        <owl:inverseOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isProducerOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Producer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasType">
+        <owl:inverseOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isOfType"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#hasWriter -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#hasWriter">
+        <owl:inverseOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isWriterOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Writer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#isActorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#isActorOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actor"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#isActressOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#isActressOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actress"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#isAwardOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#isAwardOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Awards"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#isCertificationFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#isCertificationFor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Certification"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#isDOPOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#isDOPOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#isDirectorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#isDirectorOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Director"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#isEditorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#isEditorOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#isLanguageOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#isLanguageOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Language"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#isMusicDirectorOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#isMusicDirectorOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Music_Director"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#isOfType -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#isOfType">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Genre"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#isPlacefor -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#isPlacefor">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Place"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#isProducerOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#isProducerOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Producer"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#isWriterOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#isWriterOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Writer"/>
+        <rdfs:range rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#A -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#A">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Certification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#ARREhman -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#ARREhman">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Music_Director"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#AbhishekBachchan -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#AbhishekBachchan">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Producer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Action -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Action">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Genre"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Director"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Producer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Actor -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Actor">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Actress -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Actress">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isActressOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Musical"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#AishwaryaRai -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#AishwaryaRai">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actress"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#AmitabhBachchan -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#AmitabhBachchan">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actor"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isActorOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Informative"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Animation -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Animation">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Genre"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Director"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Producer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#AshutoshGowarikar -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#AshutoshGowarikar">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Director"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Awards -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Awards">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#AyanMukharji -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#AyanMukharji">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Writer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Bangar -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Bangar">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Social"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActress"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#NanditaDas"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasCertified"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#S"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#ShyamBengal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasPlace"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Bollywood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#RajKapoor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Bollywood -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Bollywood">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Hindi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#BradPitt -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#BradPitt">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Certification -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Certification">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Comedy -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Comedy">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Genre"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Director"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Producer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Dhoom -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Dhoom">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActor"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#HritikRoshan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActress"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#AishwaryaRai"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasAwards"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Awards"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasCertified"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#U"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#AshutoshGowarikar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Hindi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasMusicDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#ARREhman"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasPlace"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Bollywood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#RajkumarHirani"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasAwards"/>
+                <owl:hasValue rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#AcademyAward"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Dil -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Dil">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Romance"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActor"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#PuneethRajkumar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActress"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#AishwaryaRai"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasCertified"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#AshutoshGowarikar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Kannada"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasPlace"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Sandalwood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#GowarikarFilms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Director -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Director">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#EmmaWatson -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#EmmaWatson">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actress"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#English -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#English">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Genre -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Genre">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Golmal -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Golmal">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Comedy"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActor"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Siddharth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActress"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#MadhuriDixit"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasCertified"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#A/U"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#YashChopra"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Hindi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasMusicDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#RDBurman"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#RajKapoor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasWriter"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#AyanMukharji"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#GowarikarFilms -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#GowarikarFilms">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Producer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Hindi -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Hindi">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Hollywood -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Hollywood">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#English"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#HritikRoshan -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#HritikRoshan">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Informative -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Informative">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Genre"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Director"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Producer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#JavedAkhtar -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#JavedAkhtar">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Writer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Kahani -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Kahani">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Informative"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActor"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#AmitabhBachchan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#RajkumarHirani"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#English"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Kannada"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#AbhishekBachchan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasWriter"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#AyanMukharji"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasCertified"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#S"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Kannada -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Kannada">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Khamoshi -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Khamoshi">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Musical"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActor"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#NasruddinShah"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActress"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#ShabanaAzmi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasCertified"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#U"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#YashChopra"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasMusicDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#RDBurman"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#RajKapoor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasAwards"/>
+                <owl:hasValue rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#NationalAwards"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#KungFu -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#KungFu">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Animation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActor"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Suriya"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActress"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#GeneliaD&apos;souza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasCertified"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#U"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#ShyamBengal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#English"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Hindi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#YashChopra"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasWriter"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#AyanMukharji"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Language -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Language">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#MadhuriDixit -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#MadhuriDixit">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actress"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#MovieType -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#MovieType">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasCertified"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#A"/>
+                            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#S"/>
+                            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#U"/>
+                            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#A/U"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#ValuePartition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Movies -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Music_Director -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Music_Director">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Musical -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Musical">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Genre"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Director"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasMusicDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Music_Director"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Producer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#NanditaDas -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#NanditaDas">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actress"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#isDirectorOf"/>
+                <owl:allValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Musical"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#NasruddinShah -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#NasruddinShah">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#ParentalGuidanceRequired -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#ParentalGuidanceRequired">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#MovieType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasCertified"/>
+                        <owl:allValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#A/U"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Person -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Person">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Place -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Place">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Movies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Pritham -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Pritham">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Music_Director"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Producer -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Producer">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#PuneethRajkumar -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#PuneethRajkumar">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#RDBurman -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#RDBurman">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Music_Director"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#RajKapoor -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#RajKapoor">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Producer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#RajkumarHirani -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#RajkumarHirani">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Director"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#RestrictedToAdult -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#RestrictedToAdult">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#MovieType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasCertified"/>
+                        <owl:allValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#A"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#RestrictedToSpecialClass -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#RestrictedToSpecialClass">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#MovieType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasCertified"/>
+                        <owl:allValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#S"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Romance -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Romance">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Genre"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Director"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Producer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#S -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#S">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Certification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#SaleemKhan -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#SaleemKhan">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Writer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Sandalwood -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Sandalwood">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Kannada"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#ShabanaAzmi -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#ShabanaAzmi">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actress"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#ShyamBengal -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#ShyamBengal">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Director"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Siddharth -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Siddharth">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#SmitaPatil -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#SmitaPatil">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actress"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Social -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Social">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Genre"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Director"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Producer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Spies -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Spies">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Animation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActor"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Suriya"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActress"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#GeneliaD&apos;souza"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasCertified"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#U"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#ShyamBengal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#English"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Hindi"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Kannada"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Telegu"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#YashRajFilms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasWriter"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#SaleemKhan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasAwards"/>
+                <owl:hasValue rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#AcademyAward"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Suriya -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Suriya">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Telegu -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Telegu">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Language"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Tollywood -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Tollywood">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Place"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Telegu"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#TomCruise -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#TomCruise">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#U -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#U">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Certification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Unrestricted -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Unrestricted">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#MovieType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasCertified"/>
+                        <owl:allValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#U"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#ValuePartition -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#ValuePartition"/>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#War -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#War">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActor"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#BradPitt"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasActress"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#EmmaWatson"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasCertified"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#A/U"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#RajkumarHirani"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasLanguage"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#English"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasMusicDirector"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Pritham"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasPlace"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Hollywood"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasProducer"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#GowarikarFilms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#hasWriter"/>
+                <owl:someValuesFrom rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#JavedAkhtar"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#Writer -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Writer">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#YashChopra -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#YashChopra">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Director"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#YashRajFilms -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#YashRajFilms">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Producer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#A/U -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#A/U">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Certification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#GeneliaD&apos;souza -->
+
+    <owl:Class rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#GeneliaD&apos;souza">
+        <rdfs:subClassOf rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Actress"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#AcademyAward -->
+
+    <owl:NamedIndividual rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#AcademyAward">
+        <rdf:type rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Awards"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#FilmfareAwards -->
+
+    <owl:NamedIndividual rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#FilmfareAwards">
+        <rdf:type rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Awards"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.movie.com/ontologies/Movie_MND.owl#NationalAwards -->
+
+    <owl:NamedIndividual rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#NationalAwards">
+        <rdf:type rdf:resource="http://www.movie.com/ontologies/Movie_MND.owl#Awards"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#A"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#S"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#U"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#A/U"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#AishwaryaRai"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#EmmaWatson"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#MadhuriDixit"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#NanditaDas"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#ShabanaAzmi"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#SmitaPatil"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#GeneliaD&apos;souza"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#AishwaryaRai"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#EmmaWatson"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#MadhuriDixit"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#ShabanaAzmi"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#SmitaPatil"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#GeneliaD&apos;souza"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#AmitabhBachchan"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#BradPitt"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#HritikRoshan"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#NasruddinShah"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#PuneethRajkumar"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Siddharth"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Suriya"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#TomCruise"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#AmitabhBachchan"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#BradPitt"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#HritikRoshan"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#PuneethRajkumar"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Siddharth"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Suriya"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#TomCruise"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Awards"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Certification"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Genre"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Language"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Person"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#Place"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#AcademyAward"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#FilmfareAwards"/>
+            <rdf:Description rdf:about="http://www.movie.com/ontologies/Movie_MND.owl#NationalAwards"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
